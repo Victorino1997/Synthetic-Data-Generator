@@ -11,7 +11,7 @@ system and prediction system.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Supervico0097/Synthetic-Data-Generator.git
+   git clone https://github.com/Victorino1997/Synthetic-Data-Generator.git
    ```
 2. **Navigate to the project directory:**
    ```bash
