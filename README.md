@@ -19,9 +19,13 @@ system and prediction system.
    ```
 3. **Install dependencies:**
    ```bash
-   1) poetry install
-   2) poetry shell
+   poetry install
    ```
+4. **Connect to Poetry Enviorment**
+   ```bash
+   poetry shell
+   ```
+   
 
 ## Usage
 
