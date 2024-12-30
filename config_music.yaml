@@ -1,0 +1,95 @@
+# Here you can set different frequencies in order to generate synthetic data based on them
+
+WEEKS_NUM: 30 # instead of dates, just num of weeks
+users_rate: 30000 #this will be approximate number of user by END_DATE
+artists_rate: 300
+
+frequencies_genre: { #assign weight for the frequency of the genres assignment
+  'Pop': {
+    "user": 200,
+    "artist": 300
+  },
+  'Rock': {
+    "user": 300,
+    "artist": 200
+  },
+  'Hip-hop': {
+    "user": 700,
+    "artist": 700
+  },
+  'Electronic': {
+    "user": 200,
+    "artist": 200
+  },
+  'Jazz': {
+    "user": 800,
+    "artist": 800
+  },
+  'Classical': {
+    "user": 800,
+    "artist": 800
+  },
+  'Blues': {
+    "user": 500,
+    "artist": 500
+  },
+  'Alternative': {
+    "user": 600,
+    "artist": 600
+  },
+}
+
+"frequencies_continent": { #assign weight for the frequency of the continent assignment
+  'North America': {
+    "user": 900,
+    "artist": 950,
+  },
+  'South America': {
+    "user": 500,
+    "artist": 450,
+  },
+  'Europe': {
+    "user": 5000,
+    "artist": 5000,
+  },
+  'Africa': {
+    "user": 200,
+    "artist": 200,
+  },
+  'Asia': {
+    "user": 400,
+    "artist": 400,
+  },
+  'Oceana': {
+    "user": 300,
+    "artist": 300,
+  },
+}
+
+
+min_streams_to_favorites: 15 #minimum of listens to song before adding to favorite
+min_streams_to_famous_song: 500 #minimum streams to song before becoming famous
+min_streams_to_famous_artist: 40 #minimum streams to song before becoming famous
+
+
+#Number of STREAMS
+avg_songs_unsub: 5 #average songs listened by unsubscribed users in a week
+avg_songs_sub: 10 #average songs listened by subscribed users in a week
+
+# Probabilities
+#Random songs section
+p_random_songs_stream: 0.5 #probability that user will access random songs section
+p_favorite_playlist: 0.6 #probability that user will access favorite songs section
+
+p_is_song_premium: 0.9 #probability that song is premium during creation
+P_is_artist_famous: 0.1 #probability that artist is famous during creation
+p_is_user_subscribed: 0 #probability that user is subscribed during creation
+
+p_fav_art_sng_gnr_cnt: 0.6 #Probability of listening to song with famous artist, famous song, favorite genre, same continent
+p_fav_art_sng_gnr: 0.5 #Probability of listening to song with famous artist, famous song, favorite genre
+p_fav_gnr: 0.4 #Probability of listening to favorite genre
+p_other: 0.6 #other
+
+
+
+p_favorite: 0.5 # probability that user will listen to song that is a favorite
